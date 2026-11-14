@@ -1,61 +1,180 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon ePortfolio - LSM</title>
+    <title>Marius Vergnol | e-Portfolio</title>
     <style>
-        /* Design épuré et minimaliste */
+        /* Sleek Dark Theme */
+        :root {
+            --bg-color: #0d0d0d;
+            --text-color: #d1d1d1;
+            --heading-color: #ffffff;
+            --accent-color: #64b5f6;
+            --border-color: #333333;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #222;
-            max-width: 800px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            max-width: 850px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 50px 20px;
         }
+
         header {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
-            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
+            margin-bottom: 50px;
         }
-        h1 { font-size: 2.5em; margin-bottom: 5px; }
-        h2 { font-size: 1.5em; color: #444; margin-top: 40px; }
-        p { color: #555; }
-        a { color: #0366d6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        ul { color: #555; }
+
+        h1 {
+            font-size: 2.8em;
+            color: var(--heading-color);
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #888888;
+            margin-top: 0;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            color: var(--heading-color);
+            margin-bottom: 20px;
+            font-weight: 500;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            color: var(--heading-color);
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        blockquote {
+            font-style: italic;
+            border-left: 2px solid #555;
+            margin: 30px 0;
+            padding: 15px 20px;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #222;
+            color: #aaa;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Ton Prénom Ton Nom</h1>
-        <p>Master en Management (LSM) | ePortfolio MyTrack</p>
+        <h1>Marius Vergnol</h1>
+        <p class="subtitle">Business Engineering | Supply Chain Management Major</p>
+        <p>Louvain School of Management (LSM) - MyTrack ePortfolio</p>
     </header>
 
     <main>
+        <!-- About Me Section -->
         <section>
-            <h2>À propos de mon parcours</h2>
-            <p>Bienvenue sur mon ePortfolio. Cet espace rassemble mon évolution, mes expériences académiques à la Louvain School of Management et mes perspectives professionnelles.</p>
+            <h2>About Me</h2>
+            <p>
+                Driven by a deep passion for optimization and a constant curiosity to learn, I am always looking for ways to make complex systems more efficient. I completed my Bachelor's degree in Business Engineering and am currently pursuing my Master’s with a major in Supply Chain Management. 
+            </p>
+            <p>
+                My academic and personal mindset revolves around rigorous analysis. I firmly believe that solving today's multifaceted challenges requires a plurality of skills, merging quantitative logic with human-centric management.
+            </p>
         </section>
 
+        <!-- Academic Journey Section -->
         <section>
-            <h2>Compétences clés</h2>
-            <ul>
-                <li><strong>Stratégie :</strong> Analyse de marché et positionnement.</li>
-                <li><strong>Réflexion critique :</strong> Remise en question et analyse de données.</li>
-                <li><em>(Ajoute tes compétences ici au fur et à mesure)</em></li>
-            </ul>
+            <h2>My Academic Journey</h2>
+            
+            <h3>Bachelor's Degree</h3>
+            <p>
+                My undergraduate years provided a highly demanding multidisciplinary foundation. Courses ranging from Mathematics, Physics, and Chemistry to Programming and Statistics pushed me to develop a strictly rigorous analytical mindset. At the same time, subjects like Philosophy, Human Management, and Production & Operations Management bridged the gap between hard science and business realities. The biggest takeaway from my Bachelor's was realizing that top-tier performance in any domain requires mastering a diverse, interconnected skill set.
+            </p>
+
+            <h3>Master's Degree (M1)</h3>
+            <p>
+                Currently in my Master’s, I am thoroughly enjoying my Major in Supply Chain Management. The program heavily emphasizes group projects, which has introduced an entirely new layer of learning. It serves as an accurate simulation of the real workplace—teaching me how to navigate team dynamics, distribute workloads, and collaborate efficiently with different personalities to achieve a common goal.
+            </p>
         </section>
 
+        <!-- Thesis & Future Section -->
         <section>
-            <h2>Mes Réalisations & Projets</h2>
-            <p>Voici un aperçu des projets sur lesquels j'ai travaillé cette année :</p>
-            <ul>
-                <li><a href="#">Lien vers un projet ou un document PDF (à ajouter plus tard)</a></li>
-                <li><a href="#">Lien vers une vidéo de présentation</a></li>
-            </ul>
+            <h2>Thesis & Academic Interests</h2>
+            <p>
+                Building on my courses in Supply Chain and Production & Operations Management, I am gearing my future Master's thesis toward the field of optimization. While the exact research question is still being defined, I am highly interested in applying supply chain optimization principles to the sports industry—investigating how data and operational efficiency can enhance performance and logistics in a sports context.
+            </p>
+        </section>
+
+        <!-- Inspiring Insights Section -->
+        <section>
+            <h2>Inspiring Insights</h2>
+            <blockquote>
+                "During a Human Management course, my group was tasked with conducting field interviews within a company. I volunteered to take the lead on this and ended up interviewing several employees, as well as the CEO of a large corporation, over the course of several hours.
+                <br><br>
+                Going into it, I wasn't sure what to expect, but I was surprised by how naturally at ease I felt leading the conversation and extracting meaningful insights. The CEO and the employees were genuinely pleased with the interaction and the professionalism of the interview. Receiving that positive feedback was a huge confidence boost and proved to me that my interpersonal and communication skills are just as sharp as my analytical ones."
+            </blockquote>
+        </section>
+
+        <!-- Future Professional Life -->
+        <section>
+            <h2>Future Professional Life</h2>
+            <p>
+                Looking ahead, I am aiming for a career dedicated to operational excellence. I want to help companies optimize their physical and data flows, streamline their supply networks, and improve their internal operations. My ultimate professional ambition would be to apply this expertise within a professional sports organization, such as a football club, where operational efficiency directly supports high-level athletic performance.
+            </p>
+        </section>
+
+        <!-- Socials -->
+        <section>
+            <h2>Connect with me</h2>
+            <div class="social-links">
+                <!-- Remplace le # par le lien de ton profil LinkedIn -->
+                <a href="#">LinkedIn Profile</a> 
+                <a href="mailto:ton.email@student.uclouvain.be">Email Me</a>
+            </div>
         </section>
     </main>
 
